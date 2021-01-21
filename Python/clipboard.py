@@ -14,8 +14,12 @@ class Clipboard:
 
 				Clipboard.text = text_tmp
 	def paste():
-		if Clipboard.text:
-			return Clipboard.text
+		try:
+			if Clipboard.text:
+				return Clipboard.text
+		except: pass
 	def clear():
-		if Clipboard.text:
-			Clipboard.text = None
+		try:
+			if Clipboard.text:
+				Clipboard.text = None
+		except: pass
