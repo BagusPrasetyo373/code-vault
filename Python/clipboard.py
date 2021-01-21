@@ -16,3 +16,6 @@ class Clipboard:
 	def paste():
 		if Clipboard.text:
 			return Clipboard.text
+	def clear():
+		if Clipboard.text:
+			Clipboard.text = None
